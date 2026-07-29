@@ -287,6 +287,40 @@
     </div>
 
 </section>
+
+<section class="lesson">
+
+    <h3>Player X and Y Position</h3>
+
+    <pre class="code"><code>
+    function playerLocation (x, y) {
+        if (x > 0 && y > 0) {
+            return "Player is on the top right.";
+        } else if (x < 0 && y < 0) {
+            return "Player is at the bottom left.";
+        } else if (x > 0 && y < 0) {
+            return "Player is at the bottom right.";
+        } else if (x < 0 && y > 0) {
+            return "Player is on the top left.";
+        } else {
+            return "Player is on one of the axes or at the origin.";
+        }
+    }
+
+    let getLocation = playerLocation(-9,7);
+    console.log(playerLocation(-9,7));
+    </code></pre>
+
+    <button onclick="runLesson3Task6()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output11"></pre>
+    </div>
+
+</section>
+
+
 <h2 class="lesson-title">Lesson 4 - Loops & Arrays</h2>
 
 <section class="lesson">
