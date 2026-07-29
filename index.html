@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>JavaScript Practice</h1>
+    <p>Basic JavaScript Exercises</p>
+</header>
+
+<!-- ================= Lesson 1 ================= -->
+
+<h2 class="lesson-title">Lesson 1 - Console Output</h2>
+
+<section class="lesson">
+
+    <h3>Code Practice 1</h3>
+
+    <pre class="code"><code>
+        console.log("Hello, I am Cobee!");
+        console.log("I am 8 years old");
+        console.log("I want to be Astronaut");
+    </code></pre>
+
+    <button onclick="runLesson1Task1()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output1"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Code Practice 2 - Draw Tree</h3>
+
+    <pre class="code"><code>
+        console.log("   *");
+        console.log("  ***");
+        console.log(" *****");
+        console.log("*******");
+        console.log("  |||");
+    </code></pre>
+
+    <button onclick="runLesson1Task2()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output2"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Code Practice 2 - Draw Fish & Cat</h3>
+
+    <pre class="code"><code>
+        // Fish
+        console.log("FISH FISH FISH");
+        console.log("&lt;&gt;&lt;    &lt;&gt;&lt;");
+        console.log("");
+        console.log("   &lt;&gt;&lt;");
+        console.log("");
+        console.log("&lt;&gt;&lt;    &lt;&gt;&lt;");
+
+        // Cat
+        console.log("MEAW MEAW");
+        console.log(" /\\\\_/\\\\");
+        console.log("( o.o )");
+        console.log(" > ^ <");
+    </code></pre>
+
+    <button onclick="runLesson1Task3()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output3"></pre>
+    </div>
+
+</section>
+
+<!-- ================= Lesson 2 ================= -->
+
+<h2 class="lesson-title">Lesson 2 - Variables</h2>
+
+<section class="lesson">
+
+    <h3>Movie Variables</h3>
+
+    <pre class="code"><code>
+        let title ="Captain Marvel";
+        let rating = 6.8;
+        let year = 2019;
+        let allAges = "No";
+
+        console.log(title);
+        console.log(rating);
+        console.log(year);
+        console.log(allAges);
+    </code></pre>
+
+    <button onclick="runLesson2Task1()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output4"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Favorite Book</h3>
+
+    <pre class="code"><code>
+        let bookTitle = "The Quantum Universe";
+        let authorName = "Brian Cox and Jeff Forshaw";
+        let publicationYear = 2011;
+        let isScience = true;
+    </code></pre>
+
+    <button onclick="runLesson2Task2()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output5"></pre>
+    </div>
+
+</section>
+
+<!-- ================= Lesson 3 ================= -->
+
+<h2 class="lesson-title">Lesson 3 - Conditionals</h2>
+
+<section class="lesson">
+
+    <h3>Positive or Negative</h3>
+
+    <pre class="code"><code>
+    function checkNumber(number){
+
+        if(number > 0){
+            return "positive";
+        }
+
+        else if(number < 0){
+            return "negative";
+        }
+
+        else{
+            return "not negative or positive";
+        }
+
+    }
+    </code></pre>
+
+    <button onclick="runLesson3Task1()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output6"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Driver License</h3>
+
+    <pre class="code"><code>
+    function eligible(age){
+
+        if(age < 17){
+            return "Not eligible";
+        }
+
+        else{
+            return "Eligible";
+        }
+
+    }
+    </code></pre>
+
+    <button onclick="runLesson3Task2()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output7"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Student Grade</h3>
+
+    <pre class="code"><code>
+    function checkGrade(score){
+
+        if(score > 90){
+            return "Grade A";
+        }
+
+        else if(score > 75){
+            return "Grade B";
+        }
+
+        else if(score > 60){
+            return "Grade C";
+        }
+
+        else{
+            return "Grade D";
+        }
+
+    }
+    </code></pre>
+
+    <button onclick="runLesson3Task3()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output8"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Shopping Discount</h3>
+
+    <pre class="code"><code>
+        let totalPayment = 200000;
+        let member = true;
+
+        if(member){
+
+        totalPayment = totalPayment - (totalPayment * 0.10);
+
+        }
+    </code></pre>
+
+    <button onclick="runLesson3Task4()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output9"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Choose Player</h3>
+
+    <pre class="code"><code>
+    function greetPlayer(player){
+
+        if(player=="Knight"){
+            return "Welcome, Knight!";
+        }
+
+        else{
+            return "Welcome, Wizard!";
+        }
+
+    }
+    </code></pre>
+
+    <button onclick="runLesson3Task5()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output10"></pre>
+    </div>
+
+</section>
+<h2 class="lesson-title">Lesson 4 - Loops & Arrays</h2>
+
+<section class="lesson">
+
+    <h3>Task 1 - Print Name 20 Times</h3>
+
+    <pre class="code"><code>
+    for(let i = 0; i < 20; i++){
+        console.log("I'm Steve");
+    }
+    </code></pre>
+
+    <button onclick="runLesson4Task1()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output12"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Task 2 - Numbers 1 to 20</h3>
+
+    <pre class="code"><code>
+    for(let i = 1; i <= 20; i++){
+        console.log(i);
+    }
+    </code></pre>
+
+    <button onclick="runLesson4Task2()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output13"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Task 3 - Multiples of 5</h3>
+
+    <pre class="code"><code>
+    for(let i = 5; i <= 100; i += 5){
+        console.log(i);
+    }
+    </code></pre>
+
+    <button onclick="runLesson4Task3()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output14"></pre>
+    </div>
+
+</section>
+
+<section class="lesson">
+
+    <h3>Task 4 - Steve's Game Time</h3>
+
+    <pre class="code"><code>
+    let gameTimes = [2,2,3,3,1,4,5];
+
+    let totalTime = 0;
+    let exceededCount = 0;
+
+    for(let i=0; i&lt;gameTimes.length; i++){
+
+        totalTime += gameTimes[i];
+
+        if(gameTimes[i] > 2){
+            exceededCount++;
+        }
+
+    }
+
+    console.log(totalTime);
+    console.log(exceededCount);
+    </code></pre>
+
+    <button onclick="runLesson4Task4()">Run</button>
+
+    <div class="output">
+        <strong>Output</strong>
+        <pre id="output15"></pre>
+    </div>
+
+</section>
+
+<h2 class="lesson-title">Lesson 5 - DOM & Buttons</h2>
+
+<section class="lesson">
+
+    <h3>Button Clicked Project</h3>
+
+    <pre class="code"><code>
+    function intro(){
+        document.write('Hi <br>');
+        document.write('My Name is Noah <br>');
+        document.write('I want to be a game developer <br>');
+    }
+
+    function funFact(){
+        document.write('Do you know? <br>');
+        document.write('The first programmer in the world was a woman named Ada Lovelace. <br>')
+    }
+    </code></pre>
+
+    <button onclick="intro()">
+        Click to know me
+    </button>
+
+    <button onclick="funFact()">
+        Click for fun fact
+    </button>
+
+    <div class="output">
+
+        <strong>Output</strong>
+
+        <div id="result"></div>
+
+    </div>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
